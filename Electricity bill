@@ -1,0 +1,25 @@
+import java.util.Scanner;
+public class Bill
+{
+    public static void main(String args[])
+    {
+        Scanner sc=new Scanner(System.in);
+        int n=sc.nextInt();
+        if(n<100)
+        {
+            System.out.println(n*1.2);
+        }
+        else if(n<300)
+        {
+            System.out.println(n*1.2);
+        }
+        else if(n>300)
+        {
+            System.out.println((n*1.2*2)+(n-300)*3);
+        }
+        else
+        {
+            System.out.println("Invalid Input");
+        }
+    }
+}
