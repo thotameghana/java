@@ -1,0 +1,19 @@
+import java.util.Scanner;
+import java.lang.*;
+public class complexequation
+{
+    public static void main(String args[])
+    {
+        int c=50,h=30;
+        Scanner sc=new Scanner(System.in);
+        int a=sc.nextInt();
+        int b=sc.nextInt();
+        int e=sc.nextInt();
+        int x=(2*c*a)/h;
+        int y=(2*c*b)/h;
+        int z=(2*c*e)/h;
+        System.out.printf("%.0f ",Math.sqrt(x));
+        System.out.printf("%.0f ",Math.sqrt(y));
+        System.out.printf("%.0f ",Math.sqrt(z));
+    }
+}
