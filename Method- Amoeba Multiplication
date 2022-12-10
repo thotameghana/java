@@ -1,0 +1,37 @@
+import java.util.Scanner;
+public class Amoeba
+{
+    public static void main(String[] args)
+    {
+        Scanner sc=new Scanner(System.in);
+        Calculation calc=new Calculation();
+        System.out.println("Enter the number of Months :");
+        int a=sc.nextInt();
+        calc.amoeba(a);
+        
+    }
+}
+class Calculation
+{
+    public static void amoeba(int a)
+    {
+        int f2=1,f1=0,m,i=0;
+        int n =0;
+        while(i < a)
+            {
+                if(i<=1)
+                {
+                    n = i;
+                }
+                else
+                {
+                    n = f1 + f2;
+                    f1 = f2;
+                    f2 = n;
+                }
+                ++i;
+            }
+            
+            System.out.println("The amoeba size is "+n);
+    }
+}
