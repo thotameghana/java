@@ -1,0 +1,19 @@
+import java.util.Scanner;
+public class Student
+{
+    public static void main(String args[])
+    {
+        Scanner sc=new Scanner(System.in);
+       int r=sc.nextInt();
+        int s1=sc.nextInt();
+        int s2=sc.nextInt();
+        System.out.println("Roll Number Is:"+r);
+        
+        System.out.println("Subject 1:"+s1);
+       // s1=sc.nextInt();
+        System.out.println("Subject 2:"+s2);
+        //s2=sc.nextInt();
+        System.out.println("Total:" +(s1+s2));
+        
+    }
+}
