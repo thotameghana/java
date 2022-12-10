@@ -1,0 +1,32 @@
+import java.util.Scanner;
+public class Factorial
+{
+    public static void main(String[] args)
+    {
+        int fa=1;
+        Scanner sc=new Scanner(System.in);
+        Fact factor=new Fact();
+        int n=sc.nextInt();
+        factor.fac(n);
+    }
+}
+class Fact
+{
+    public static void fac(int n)
+    {
+        int fa=1,x=1;
+        while(fa<n)
+        {
+            x=1+x;
+            fa=fa*x;
+        }
+        if(fa==n)
+        {
+            System.out.println("yes");
+        }
+        else
+        {
+             System.out.println("no");
+        }
+    }
+}
