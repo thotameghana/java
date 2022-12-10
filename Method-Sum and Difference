@@ -1,0 +1,26 @@
+import java.util.Scanner;
+public class SumDiff
+{
+    public static void main(String args[])
+    {
+        Scanner sc=new Scanner(System.in);
+        Calclation cal=new Calclation();
+        int a=sc.nextInt();
+        int b=sc.nextInt();
+        System.out.println(cal.add(a,b));
+        System.out.println(cal.sub(a,b));
+    }
+}
+class Calclation
+{
+    public static int add(int a,int b)
+    {
+        int add=a+b;
+        return add;
+    }
+    public static int sub(int a,int b)
+    {
+        int sub=a-b;
+        return sub;
+    }
+}
