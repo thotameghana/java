@@ -1,0 +1,15 @@
+import java.util.Scanner;
+public class perfectsquare
+{
+    public static void main(String args[])
+    {
+        Scanner sc=new Scanner(System.in);
+        int a=sc.nextInt();
+        int b=sc.nextInt();
+        for(int i=a+1;i<b;i++)
+        {
+            if(Math.sqrt(i)==(int)Math.sqrt(i))
+            System.out.print(i+" ");
+        }
+    }
+}
