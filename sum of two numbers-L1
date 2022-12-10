@@ -1,0 +1,21 @@
+import java.util.Scanner;
+ public class sotn
+{
+    public static void main(String args[])
+{
+    Scanner sc=new Scanner(System.in);
+    int a=sc.nextInt();
+    int b=sc.nextInt();
+    Calculation cacl=new Calculation();
+    System.out.println(cacl.add(a,b));
+    
+}
+}
+class Calculation
+{
+        public static int add(int a,int b)
+        {
+        int sum=a+b;
+        return sum;
+    }
+}
