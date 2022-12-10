@@ -1,0 +1,20 @@
+import java.util.*;
+public class Assessment1
+{
+    public static void main(String args[])
+ {
+    int a,b,c;
+    Scanner sc=new Scanner(System.in);
+   a=sc.nextInt();
+   b=sc.nextInt();
+   c=sc.nextInt();
+    if((b*75)+(c*50)<=a)
+    {
+        System.out.println("Boat is Stable");
+    }
+    else
+    {
+        System.out.println("Boat is unstable");
+    }
+ }
+}
