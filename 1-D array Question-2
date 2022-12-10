@@ -1,0 +1,59 @@
+import java.util.Scanner;
+public class Summinmax
+{
+    public static void main(String args[])
+    {
+        int c=0;
+        double d=0;
+        Scanner sc=new Scanner(System.in);
+        int n=10;
+        //int n=sc.nextInt();
+        int a[]=new int[n];
+        for(int i=0;i<10;i++)
+        {
+            a[i]=sc.nextInt();
+        }
+        System.out.println("Enter 10 array elements Array:");
+        for(int i=0;i<n;i++)
+        {
+            c=c+a[i];
+        }
+        System.out.println("sum:"+c);
+         for(int i=0;i<10;i++)
+        {
+            for(int j=i+1;j<10;j++)
+            {
+            if(a[i]>a[j])
+            {
+                a[i]=a[i]+a[j];
+                a[j]=a[i]-a[j];
+                a[i]=a[i]-a[j];
+            }
+            }
+        }
+        System.out.println("min:"+ a[0]);
+        for(int i=0;i<10;i++)
+        {
+            for(int j=i+1;j<n;j++)
+            {
+            if(a[i]<a[j])
+            {
+                a[i]=a[i]+a[j];
+                a[j]=a[i]-a[j];
+                a[i]=a[i]-a[j];
+            }
+            }
+        }
+        System.out.println("max:"+ a[0]);
+        for(int i=0;i<10;i++)
+        {
+            for(int j=i+1;j<10;j++)
+            {
+                d=c/10.0;
+               // System.out.println("average:"+d);
+            }
+            //System.out.println("average:"+d);
+        }
+        System.out.println("average:"+d);
+    }
+}
