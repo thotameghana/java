@@ -1,0 +1,36 @@
+import java.util.Scanner;
+public class Area
+{
+    public static void main(String args[])
+    {
+        //float p=(22/7);
+        Scanner sc=new Scanner(System.in);
+        int s=sc.nextInt();
+        int l=sc.nextInt();
+        int b=sc.nextInt();
+        float r=sc.nextInt();
+        Square src=new Square();
+        System.out.println(src.squre(s));
+        System.out.println(src.rectangle(l,b));
+        System.out.println(src.circle(r));
+    }
+}
+class Square
+{
+    float p=(22/7);
+    public static float squre(int s)
+    {
+        int sqr=s*s;
+        return sqr;
+    }
+    public static float rectangle(int l,int b)
+    {
+        int rec=l*b;
+        return rec;
+    }
+    public static long circle(long r)
+    {
+        float cir=r*r*3.14;
+        return cir;
+    }
+}
