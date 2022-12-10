@@ -1,0 +1,31 @@
+import java.util.Scanner;
+public class Basicmath
+{
+    public static void main(String args[])
+    {
+        int c=0;
+        double d=0;
+        Scanner sc=new Scanner(System.in);
+        int n=sc.nextInt();
+        int a[]=new int[4];
+        for(int i=0;i<4;i++)
+        {
+            a[i]=sc.nextInt();
+        }
+        for(int i=0;i<n;i++)
+        {
+            c=c+a[i];
+        }
+            for(int i=0;i<n;i++)
+            {
+            for(int j=i+1;j<n;j++)
+            {
+                d=c/4.0;
+               // System.out.println("average:"+d);
+            }
+            //System.out.println("average:"+d);
+            }
+        System.out.println(d);
+
+    }
+}
