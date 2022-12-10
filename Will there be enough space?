@@ -1,0 +1,28 @@
+import java.util.Scanner;
+public class bus
+{
+    public static void main(String args[])
+    {
+        Scanner sc=new Scanner(System.in);
+        int cap=sc.nextInt();
+        int on=sc.nextInt();
+        int wait=sc.nextInt();
+        Calculation calc=new Calculation();
+        calc.megha(cap,on,wait);
+    }
+}
+class Calculation
+{
+    public static void megha(int cap,int on,int wait)
+    {
+        int x=on+wait;
+        if(x==cap)
+        {
+            System.out.printf("0");
+        }
+        else
+        {
+            System.out.printf("He can't fit %d of the %d waiting",on-wait,wait);
+        }
+    }
+}
