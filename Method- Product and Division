@@ -1,0 +1,35 @@
+import java.util.Scanner;
+public class ProDiv
+{
+    public static void main(String args[])
+    {
+        Scanner sc=new Scanner(System.in);
+        Calculation clsc=new Calculation();
+        int a=sc.nextInt();//a value
+        int b=sc.nextInt();//b value
+        System.out.println(clsc.mul(a,b));
+        System.out.println(clsc.div(a,b));
+        System.out.println(clsc.moddiv(a,b));
+    }
+}
+
+class Calculation
+{
+    public static int mul(int a,int b)
+    {
+        int mul=a*b;
+        return mul;
+    }
+    public static int div(int a,int b)
+    {
+        int div=a/b;
+        return div;
+    }
+    public static int moddiv(int a,int b)
+    {
+        int moddiv=a%b;
+        return moddiv;
+    }
+}
+
+
