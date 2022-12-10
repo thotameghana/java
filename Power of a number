@@ -1,0 +1,12 @@
+import java.util.Scanner;
+import java.lang.*;
+public class Powerofanumber
+{
+   public static void main(String args[])
+    {
+        Scanner sc=new Scanner(System.in);
+        int n=sc.nextInt();
+        int p=sc.nextInt();
+        System.out.printf("%.0f",Math.pow(n,p));
+    }
+}
