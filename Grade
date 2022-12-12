@@ -1,0 +1,27 @@
+import java.util.Scanner;
+public class Grade
+{
+    public static void main(String args[])
+    {
+        Scanner sc=new Scanner(System.in);
+        System.out.println("Enter student's basic information:");
+        System.out.println("Name:" );
+        System.out.println("Age: ");
+        System.out.println("Gender: ");
+        String name=sc.nextLine();
+        int age=sc.nextInt();
+        char gen=sc.next().charAt(0);
+        System.out.println(" ");
+        System.out.println("Enter student's result information: ");
+        System.out.println("Total Marks : ");
+        System.out.println("Grade:");
+        int mar=sc.nextInt();
+        char gra=sc.next().charAt(0);
+        System.out.println("Name:" +name);
+        System.out.println("Age:" +age);
+        System.out.println("Gender:" +gen);
+        System.out.println("Total Marks: "+mar);
+        System.out.println("Percentage: "+mar/5);
+        System.out.println("Grade: "+gra);
+    }
+}
